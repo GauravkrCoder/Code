@@ -1,0 +1,14 @@
+<p>
+  reactive2 works!
+</p>
+
+
+<form [formGroup]="frmGrp1">
+  <div>
+    sno : <input type="text" formControlName="sno" />
+    sname: <input type="text" formControlName="sname" />
+    Image : <img [src]="url" width="100px" height="100px" />
+    <input type='file' (change)="onSelectFile($event)" />
+    <button (click)="btnSubmit()">Submit</button>
+  </div>
+</form>
